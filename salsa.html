@@ -1,1 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Embajada del Sabor | Salsamentaria en Bogotá</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a9c?q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
 
+    <!-- Navbar -->
+    <nav class="bg-red-700 text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fas fa-drumstick-bite text-3xl"></i>
+                <div>
+                    <h1 class="text-2xl font-bold">La Embajada del Sabor</h1>
+                    <p class="text-xs -mt-1">Salsamentaria Premium</p>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-yellow-300 transition">Inicio</a>
+                <a href="#productos" class="hover:text-yellow-300 transition">Productos</a>
+                <a href="#nosotros" class="hover:text-yellow-300 transition">Nosotros</a>
+                <a href="#ubicacion" class="hover:text-yellow-300 transition">Ubicación</a>
+                <a href="#contacto" class="hover:text-yellow-300 transition">Contacto</a>
+            </div>
+            <button class="bg-white text-red-700 px-5 py-2 rounded-full font-semibold hover:bg-yellow-300 transition">
+                <i class="fas fa-phone"></i> 310 123 4567
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero h-screen flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-5xl md:text-6xl font-bold mb-4">Sabor auténtico desde 2015</h2>
+            <p class="text-xl md:text-2xl mb-8">La mejor salsamentaria de Bogotá</p>
+            <a href="#productos" class="inline-block bg-yellow-400 text-red-900 font-bold text-xl px-10 py-4 rounded-full hover:bg-yellow-300 transition">
+                Ver nuestros productos →
+            </a>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-red-800">Nuestros Productos</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Producto -->
+                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1594041680534-9c3f6c3f5c0e?q=80&w=800" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Jamón Serrano Ibérico</h3>
+                        <p class="text-sm text-gray-500">Importado • 12 meses de curación</p>
+                        <p class="text-red-600 font-bold mt-2">$48.900 / kg</p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1626645733706-c3d3b3d3b3d3?q=80&w=800" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Salchichón Extra</h3>
+                        <p class="text-sm text-gray-500">Receta artesanal</p>
+                        <p class="text-red-600 font-bold mt-2">$32.900 / kg</p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1607623812832-9b4c1b8c3e5d?q=80&w=800" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Queso Gouda Ahumado</h3>
+                        <p class="text-sm text-gray-500">Holanda</p>
+                        <p class="text-red-600 font-bold mt-2">$29.900 / kg</p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-xl transition">
+                    <img src="https://images.unsplash.com/photo-1626645733706-c3d3b3d3b3d3?q=80&w=800" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold">Mortadela Italiana</h3>
+                        <p class="text-sm text-gray-500">Con pistachos</p>
+                        <p class="text-red-600 font-bold mt-2">$26.500 / kg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="nosotros" class="py-16 bg-red-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-red-800 mb-6">Tradición y Calidad en Bogotá</h2>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Desde 2015, <strong>La Embajada del Sabor</strong> trae a tu mesa los mejores embutidos, jamones, quesos y salsamentaria importada y nacional. 
+                        Seleccionamos cuidadosamente cada producto para ofrecerte lo mejor del sabor.
+                    </p>
+                    <ul class="mt-6 space-y-3">
+                        <li><i class="fas fa-check text-green-600 mr-3"></i> Productos importados de España, Italia y Alemania</li>
+                        <li><i class="fas fa-check text-green-600 mr-3"></i> Embutidos artesanales colombianos</li>
+                        <li><i class="fas fa-check text-green-600 mr-3"></i> Quesos premium</li>
+                        <li><i class="fas fa-check text-green-600 mr-3"></i> Atención personalizada</li>
+                    </ul>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a9c?q=80&w=800" class="w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8 text-red-800">Visítanos</h2>
+            <div class="text-center mb-6">
+                <p class="text-xl">📍 Calle 72 # 10-45, Chapinero Alto, Bogotá</p>
+                <p class="text-lg text-gray-600">Horario: Lunes a Sábado 8:00 am - 7:00 pm | Domingo 9:00 am - 3:00 pm</p>
+            </div>
+            <div class="bg-gray-200 h-96 rounded-2xl flex items-center justify-center">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.5!2d-74.057!3d4.66!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM5JzM2LjAiTiA3NMKwMDMnMjUuMiJX!5e0!3m2!1ses!2sco!4v1720000000000" 
+                    width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-2xl font-bold mb-2">La Embajada del Sabor</p>
+            <p>Tu salsamentaria de confianza en Bogotá</p>
+            
+            <div class="flex justify-center space-x-6 my-8 text-2xl">
+                <i class="fab fa-instagram hover:text-yellow-300 cursor-pointer"></i>
+                <i class="fab fa-facebook hover:text-yellow-300 cursor-pointer"></i>
+                <i class="fab fa-whatsapp hover:text-yellow-300 cursor-pointer"></i>
+            </div>
+
+            <p class="text-sm text-gray-400">© 2026 La Embajada del Sabor - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
